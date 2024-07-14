@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .App-logo {
@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
@@ -35,4 +34,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+.custom-left-arrow,
+.custom-right-arrow {
+    /*background: red;*/
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    color: white;
+}
+
+.custom-left-arrow {
+    left: 10px;
+}
+
+.custom-right-arrow {
+    right: 10px;
+}
+.selected {
+    border:2px solid red !important;
 }
